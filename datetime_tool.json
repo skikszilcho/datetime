@@ -1,0 +1,20 @@
+{
+  "type": "function",
+  "function": {
+    "name": "get_current_time",
+    "description": "Return current date‑time for a given zone. Use \"UTC\" or \"Africa/Johannesburg\".",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "timeZone": {
+          "type": "string",
+          "enum": ["UTC", "Africa/Johannesburg"],
+          "description": "Time‑zone name."
+        }
+      },
+      "required": ["timeZone"]
+    },
+    "url": "https://timeapi.io/api/time/current/zone",
+    "method": "GET"
+  }
+}
